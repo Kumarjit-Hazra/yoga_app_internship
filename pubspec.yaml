@@ -1,0 +1,51 @@
+name: revoltronx_yoga_app
+description: A modular yoga session app for the RevoltronX internship assignment.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For playing audio files from assets
+  audioplayers: ^5.2.0
+
+  # For state management, to link the UI with the session logic
+  provider: ^6.0.5
+
+  # For using custom fonts like Inter
+  google_fonts: ^6.1.0
+
+  # Standard iOS-style icons
+  cupertino_icons: ^1.0.2
+
+  # For persistent storage of streaks
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.jpeg"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  # Declaring asset folders so Flutter knows about them
+  assets:
+    - assets/json/
+    - assets/images/
+    - assets/audio/
